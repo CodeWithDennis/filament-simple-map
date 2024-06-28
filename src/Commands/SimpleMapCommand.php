@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace CodeWithDennis\SimpleMap\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SimpleMapCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-simple-map';
 
     public $description = 'My command';
 
