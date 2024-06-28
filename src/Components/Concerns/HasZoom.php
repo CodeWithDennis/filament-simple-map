@@ -6,9 +6,9 @@ use Closure;
 
 trait HasZoom
 {
-    protected Closure|int $zoom = 10;
+    protected Closure | int $zoom = 10;
 
-    public function zoom(Closure|int $zoom): static
+    public function zoom(Closure | int $zoom): static
     {
         $this->zoom = $zoom;
 

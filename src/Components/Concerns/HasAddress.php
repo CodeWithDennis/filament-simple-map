@@ -6,9 +6,9 @@ use Closure;
 
 trait HasAddress
 {
-    protected Closure|string|null $address = null;
+    protected Closure | string | null $address = null;
 
-    public function address(Closure|string|null $address): static
+    public function address(Closure | string | null $address): static
     {
         $this->address = $address;
 
