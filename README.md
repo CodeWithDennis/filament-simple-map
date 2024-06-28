@@ -38,7 +38,7 @@ use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 
 SimpleMap::make('map')
     ->zoom(10)
-    ->address(fn($record) => $record->quoteRequest->address)
+    ->address('Netherlands, Amsterdam')
 ```
 
 ## Contributing
