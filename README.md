@@ -4,9 +4,10 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-simple-map/pint.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/codewithdennis/filament-simple-map/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/codewithdennis/filament-simple-map.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-simple-map)
 
-This package offers a straightforward and easy-to-use map action component for your Filament application. The packages use an iframe under the hood to display the map, which makes it easy to integrate
-with your
-application. Make sure you have a Google Maps API key to use this package. You can get one [here](https://developers.google.com/maps/documentation/javascript/get-api-key) for free.
+This package provides a simple and user-friendly map display action component for your Filament application. It utilizes an iframe to render the map, ensuring seamless integration. Note that this
+package is
+solely for displaying a map and does not support any additional features. Ensure you have a [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key) key to use this
+package.
 
 ## Installation
 
