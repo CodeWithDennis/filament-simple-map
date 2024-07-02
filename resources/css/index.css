@@ -1,1 +1,7 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
+.dark .filament-simple-map iframe {
+    filter: grayscale(100%) invert(92%) contrast(83%)
+}
+
+.filament-simple-map iframe {
+    left: 0;
+}

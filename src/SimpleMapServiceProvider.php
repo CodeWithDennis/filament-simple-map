@@ -2,6 +2,8 @@
 
 namespace CodeWithDennis\SimpleMap;
 
+use Filament\Support\Assets\Css;
+use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -21,8 +23,16 @@ class SimpleMapServiceProvider extends PackageServiceProvider
         }
     }
 
+    public function packageBooted(): void
+    {
+        FilamentAsset::register([
+            Css::make('filament-simple-map-styles', __DIR__.'/../resources/dist/filament-simple-map.css'),
+        ], 'codewithdennis/filament-simple-map');
+    }
+
     protected function getAssetPackageName(): ?string
     {
         return 'codewithdennis/filament-simple-map';
     }
+
 }
