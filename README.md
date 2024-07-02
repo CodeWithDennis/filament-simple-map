@@ -4,9 +4,9 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-simple-map/pint.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/codewithdennis/filament-simple-map/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/codewithdennis/filament-simple-map.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-simple-map)
 
-This package provides a simple and user-friendly map display action component for your Filament application. It utilizes an iframe to render the map, ensuring seamless integration. Note that this
-package is
-solely for displaying a map and does not support any additional features. Ensure you have a [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key) key to use this
+This package provides a **simple** and user-friendly map display action component for your Filament application. It utilizes an iframe to render the map, ensuring seamless integration. Note that this
+package is **solely for displaying a map** and does not support any additional features. Ensure you have a [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key)
+key to use this
 package.
 
 ## Installation
@@ -34,20 +34,28 @@ return [
 
 ## Usage
 
-Make sure you pick the correct component for your use case.
+You can add the `SimpleMap` component to `getActions()` method in your Filament resource.
+
+```php
+protected function getActions(): array
+    {
+        return [
+            SimpleMap::make('map')
+                ->address('Netherlands, Amsterdam, Mc Donalds'),
+        ];
+    }
+```
+
+You can add the `SimpleMap` component to any `TextEntry` field.
 
 ```php
 use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 
-SimpleMap::make('map')
-    ->address('Netherlands, Amsterdam, Mc Donalds')
-```
-
-```php
-use CodeWithDennis\SimpleMap\Components\Actions\SimpleMap;
-
-SimpleMap::make('map')
-    ->address('Netherlands, Amsterdam, Mc Donalds')
+TextEntry::make('address')
+    ->action(
+        SimpleMap::make('map-2')
+            ->address('Netherlands, Amsterdam, Mc Donalds')
+    )
 ```
 
 ### Zoom
