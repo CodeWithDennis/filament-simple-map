@@ -26,7 +26,7 @@ class SimpleMapServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         FilamentAsset::register([
-            Css::make('filament-simple-map-styles', __DIR__.'/../resources/dist/filament-simple-map.css'),
+            Css::make('filament-simple-map-styles', __DIR__ . '/../resources/dist/filament-simple-map.css'),
         ], 'codewithdennis/filament-simple-map');
     }
 
@@ -34,5 +34,4 @@ class SimpleMapServiceProvider extends PackageServiceProvider
     {
         return 'codewithdennis/filament-simple-map';
     }
-
 }
