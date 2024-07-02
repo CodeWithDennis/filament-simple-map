@@ -38,7 +38,7 @@ use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 
 SimpleMap::make('map')
     ->zoom(10)
-    ->address('Netherlands, Amsterdam')
+    ->address('Netherlands, Amsterdam, Mc Donalds')
 ```
 
 ## Contributing
