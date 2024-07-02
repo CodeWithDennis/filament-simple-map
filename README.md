@@ -66,6 +66,12 @@ If you want to set the zoom level of the map, you can use the `zoom` method. The
 ->zoom(10)
 ```
 
+
+## Screenshots
+
+![dark.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/dark.png)
+![light.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/light.png)
+
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
