@@ -34,12 +34,28 @@ return [
 
 ## Usage
 
+Make sure you pick the correct component for your use case.
+
 ```php
 use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 
 SimpleMap::make('map')
-    ->zoom(10)
     ->address('Netherlands, Amsterdam, Mc Donalds')
+```
+
+```php
+use CodeWithDennis\SimpleMap\Components\Actions\SimpleMap;
+
+SimpleMap::make('map')
+    ->address('Netherlands, Amsterdam, Mc Donalds')
+```
+
+### Zoom
+
+If you want to set the zoom level of the map, you can use the `zoom` method. The default zoom level is `10`.
+
+```php
+->zoom(10)
 ```
 
 ## Contributing

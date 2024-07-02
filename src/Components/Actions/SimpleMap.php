@@ -1,20 +1,20 @@
 <?php
 
-namespace CodeWithDennis\SimpleMap\Components\Infolists;
+namespace CodeWithDennis\SimpleMap\Components\Actions;
 
 use CodeWithDennis\SimpleMap\Components\Concerns\HasAddress;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasKey;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasModalContent;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasZoom;
-use Filament\Infolists\Components\Actions\Action;
+use Filament\Actions\Action;
 
 class SimpleMap extends Action
 {
-    use HasModalContent;
     use HasAddress;
     use HasKey;
     use HasZoom;
-    
+    use HasModalContent;
+
     protected function setUp(): void
     {
         parent::setUp();
