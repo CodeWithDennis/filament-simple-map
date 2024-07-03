@@ -9,6 +9,8 @@ package is **solely for displaying a map** and does not support any additional f
 key to use this
 package.
 
+![thumbnail.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/thumbnail.png)
+
 ## Installation
 
 You can install the package via composer:
