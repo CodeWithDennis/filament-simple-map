@@ -4,7 +4,12 @@
     "keywords": [
         "CodeWithDennis",
         "laravel",
-        "filament-simple-map"
+        "filament-simple-map",
+        "filament",
+        "filamentphp",
+        "maps",
+        "map",
+        "google-maps"
     ],
     "homepage": "https://github.com/codewithdennis/filament-simple-map",
     "support": {
@@ -15,7 +20,6 @@
     "authors": [
         {
             "name": "CodeWithDennis",
-            "email": "personal.elsinga@gmail.com",
             "role": "Developer"
         }
     ],
