@@ -29,7 +29,7 @@ This is the contents of the published config file:
 
 ```php
 return [
-    'google_maps_embed_api' => env('GOOGLE_MAPS_EMBED_API'),
+    'google_maps_embed_api_key' => env('GOOGLE_MAPS_EMBED_API_KEY'),
 ];
 
 ```
