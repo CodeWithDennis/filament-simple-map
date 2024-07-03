@@ -63,7 +63,7 @@ TextEntry::make('address')
 ```php
 use CodeWithDennis\SimpleMap\Components\Forms\SimpleMap;
 
-Forms\Components\TextInput::make('address')
+TextInput::make('address')
     ->suffixAction(
         SimpleMap::make('asd')
             ->address('Mac Donalds, New York, USA'),
