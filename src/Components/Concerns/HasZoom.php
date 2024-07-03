@@ -15,7 +15,7 @@ trait HasZoom
         return $this;
     }
 
-    public function getZoom(): ?string
+    public function getZoom(): ?int
     {
         return $this->evaluate($this->zoom);
     }
