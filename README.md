@@ -43,12 +43,12 @@ protected function getActions(): array
     {
         return [
             SimpleMap::make('map')
-                ->address('Netherlands, Amsterdam, Mc Donalds'),
+                ->address(fn(Model $record) => $record->address)),
         ];
     }
 ```
 
-You can add the `SimpleMap` component to any `TextEntry` field.
+You can add the `SimpleMap` component to any `TextEntry` field action.
 
 ```php
 use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
@@ -56,7 +56,7 @@ use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 TextEntry::make('address')
     ->action(
         SimpleMap::make('map-2')
-            ->address('Netherlands, Amsterdam, Mc Donalds')
+            ->address(fn(Model $record) => $record->address))
     )
 ```
 
