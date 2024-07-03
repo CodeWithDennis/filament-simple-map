@@ -36,27 +36,37 @@ return [
 
 ## Usage
 
-You can add the `SimpleMap` component to `getActions()` method in your Filament resource.
+Here are a couple of examples of how you can use the `SimpleMap` component.
 
 ```php
+use CodeWithDennis\SimpleMap\Components\Actions\SimpleMap;
+
 protected function getActions(): array
     {
         return [
-            SimpleMap::make('map')
+            SimpleMap::make('address')
                 ->address(fn(Model $record) => $record->address)),
         ];
     }
 ```
-
-You can add the `SimpleMap` component to any `TextEntry` field action.
 
 ```php
 use CodeWithDennis\SimpleMap\Components\Infolists\SimpleMap;
 
 TextEntry::make('address')
     ->action(
-        SimpleMap::make('map-2')
+        SimpleMap::make('address')
             ->address(fn(Model $record) => $record->address))
+    )
+```
+
+```php
+use CodeWithDennis\SimpleMap\Components\Forms\SimpleMap;
+
+Forms\Components\TextInput::make('address')
+    ->suffixAction(
+        SimpleMap::make('asd')
+            ->address('Mac Donalds, New York, USA'),
     )
 ```
 
