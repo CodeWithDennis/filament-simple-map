@@ -10,11 +10,11 @@ use Filament\Infolists\Components\Actions\Action;
 
 class SimpleMap extends Action
 {
-    use HasModalContent;
     use HasAddress;
     use HasKey;
+    use HasModalContent;
     use HasZoom;
-    
+
     protected function setUp(): void
     {
         parent::setUp();

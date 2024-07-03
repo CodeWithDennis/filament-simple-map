@@ -12,8 +12,8 @@ class SimpleMap extends Action
 {
     use HasAddress;
     use HasKey;
-    use HasZoom;
     use HasModalContent;
+    use HasZoom;
 
     protected function setUp(): void
     {

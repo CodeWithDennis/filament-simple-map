@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 
 trait HasModalContent
 {
-    public function getModalContent(): View|Htmlable|null
+    public function getModalContent(): View | Htmlable | null
     {
         return view('filament-simple-map::components.infolists.simple-map', [
             'address' => $this->getAddress(),
