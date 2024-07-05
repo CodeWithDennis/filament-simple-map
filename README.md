@@ -8,7 +8,7 @@ This package provides a **simple** and user-friendly map display action componen
 key to use this
 package.
 
-![thumbnail.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/thumbnail.png)
+![thumbnail.jpg](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/thumbnail.jpg)
 
 ## Installation
 
@@ -80,7 +80,7 @@ Here is an example of how to use the **place** mode.
 SimpleMap::make()
     ->address('City Hall, New York, NY')
     ->center('37.4218,-122.0840')
-    ->zoom(10) // 0 to 21
+    ->zoom(10)
     ->satellite()
     ->language('en')
     ->region('US')
@@ -120,7 +120,7 @@ Here is an example of how to use the `view` mode.
 SimpleMap::make()
     ->viewing()
     ->center('-33.8569,151.2152')
-    ->zoom(10) // 0 to 21
+    ->zoom(10)
     ->satellite()
 ```
 
