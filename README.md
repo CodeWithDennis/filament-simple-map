@@ -33,7 +33,7 @@ return [
 ```
 
 ## Usage
-This package supports the following Google Maps modes `place`, `view`, `streetview` `search` and `directions`. The default mode is `place`.
+This package supports the following Google Maps modes `place`, `view`, `streetview`, `search` and `directions`. The default mode is `place`.
 
 ### Place
 Methods that are available with the default **place** mode.
