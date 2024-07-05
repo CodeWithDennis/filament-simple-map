@@ -334,12 +334,6 @@ SimpleMap::make()
     ->zoom(10)
 ```
 
-## Screenshots
-
-![dark.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/dark.png)
-![light.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/light.png)
-![dark-route.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/dark-route.png)
-![light-route.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/light-route.png)
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
