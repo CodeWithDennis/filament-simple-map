@@ -13,7 +13,7 @@ trait HasModalContent
     {
         $parameters['key'] = $this->getKey();
 
-        return $this->baseUrl.$path.'?'.http_build_query($parameters);
+        return $this->baseUrl . $path . '?' . http_build_query($parameters);
     }
 
     protected function getPlaceUrl(): string
@@ -100,10 +100,10 @@ trait HasModalContent
         };
     }
 
-    public function getModalContent(): View|Htmlable|null
+    public function getModalContent(): View | Htmlable | null
     {
         return view('filament-simple-map::components.infolists.simple-map', [
-            'url' => $this->getBuildUrl()
+            'url' => $this->getBuildUrl(),
         ]);
     }
 }
