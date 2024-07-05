@@ -6,7 +6,7 @@ use Closure;
 
 trait HasAvoid
 {
-    protected Closure | null | array $avoid = null; // tolls|ferried|highways
+    protected Closure | null | array $avoid = null;
 
     public function avoid(Closure | null | array $avoid): static
     {

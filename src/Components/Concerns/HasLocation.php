@@ -8,7 +8,7 @@ trait HasLocation
 {
     protected Closure | string | null $location = null;
 
-    public function location(Closure | string | null $location): static // TODO: Split into 2 methods lat and lng
+    public function location(Closure | string | null $location): static
     {
         $this->location = $location;
 
