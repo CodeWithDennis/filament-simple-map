@@ -1,11 +1,11 @@
 <?php
 
-namespace CodeWithDennis\SimpleMap\Components\Infolists\Components\Actions;
+namespace CodeWithDennis\SimpleMap\Components\Actions;
 
-use CodeWithDennis\SimpleMap\Components\Infolists\Components\Concerns\HasAddress;
-use CodeWithDennis\SimpleMap\Components\Infolists\Components\Concerns\HasKey;
-use CodeWithDennis\SimpleMap\Components\Infolists\Components\Concerns\HasModalContent;
-use CodeWithDennis\SimpleMap\Components\Infolists\Components\Concerns\HasZoom;
+use CodeWithDennis\SimpleMap\Components\Concerns\HasAddress;
+use CodeWithDennis\SimpleMap\Components\Concerns\HasKey;
+use CodeWithDennis\SimpleMap\Components\Concerns\HasModalContent;
+use CodeWithDennis\SimpleMap\Components\Concerns\HasZoom;
 use Filament\Actions\Action;
 
 class SimpleMap extends Action
