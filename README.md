@@ -8,7 +8,7 @@ This package provides a **simple** and user-friendly map display action componen
 key to use this
 package.
 
-![thumbnail.jpg](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/thumbnail.jpg)
+![thumbnail.png](https://raw.githubusercontent.com/CodeWithDennis/filament-simple-map/main/resources/images/thumbnail.png)
 
 ## Installation
 
