@@ -77,13 +77,19 @@ Defines the appropriate borders and labels to display, based on geopolitical sen
 Here is an example of how to use the **place** mode.
 
 ```php
-SimpleMap::make()
-    ->address('City Hall, New York, NY')
-    ->center('37.4218,-122.0840')
-    ->zoom(10)
-    ->satellite()
-    ->language('en')
-    ->region('US')
+Forms\Components\TextInput::make('address')
+    ->required()
+    ->maxLength(255)
+    ->suffixAction(
+        SimpleMap::make('showMap')
+            ->icon('heroicon-o-map')
+            ->address('City Hall, New York, NY')
+            ->center('37.4218,-122.0840')
+            ->zoom(10)
+            ->satellite()
+            ->language('en')
+            ->region('US'),
+    ),
 ```
 
 ### View
@@ -117,11 +123,16 @@ Sets the map to satellite view. (default: roadmap)
 Here is an example of how to use the `view` mode.
 
 ```php
-SimpleMap::make()
-    ->viewing()
-    ->center('-33.8569,151.2152')
-    ->zoom(10)
-    ->satellite()
+Forms\Components\TextInput::make('address')
+    ->required()
+    ->maxLength(255)
+    ->suffixAction(
+        SimpleMap::make('showMap')
+            ->viewing()
+            ->center('-33.8569,151.2152')
+            ->zoom(10)
+            ->satellite()
+    ),
 ```
 
 ### Directions
@@ -222,14 +233,19 @@ Defines the appropriate borders and labels to display, based on geopolitical sen
 Here is an example of how to use the **directions** mode.
 
 ```php
-SimpleMap::make()
-    ->directions()
-    ->origin('Amsterdam, Netherlands')
-    ->destination('Rotterdam, Netherlands')
-    ->walking()
-    ->imperial()
-    ->satellite()
-    ->language('nl')
+Forms\Components\TextInput::make('address')
+    ->required()
+    ->maxLength(255)
+    ->suffixAction(
+        SimpleMap::make('showMap')
+            ->directions()
+            ->origin('Amsterdam, Netherlands')
+            ->destination('Rotterdam, Netherlands')
+            ->walking()
+            ->imperial()
+            ->satellite()
+            ->language('nl')
+    ),
 ```
 
 ### Streetview
@@ -327,12 +343,18 @@ Defines the appropriate borders and labels to display, based on geopolitical sen
 Here is an example of how to use the **search** mode.
 
 ```php
-SimpleMap::make()
-    ->search()
-    ->query('restaurants near Amsterdam, Netherlands')
-    ->center('52.3676,4.9041')
-    ->zoom(10)
+Forms\Components\TextInput::make('address')
+    ->required()
+    ->maxLength(255)
+    ->suffixAction(
+       SimpleMap::make()
+            ->search()
+            ->query('restaurants near Amsterdam, Netherlands')
+            ->center('52.3676,4.9041')
+            ->zoom(10)
+    ),
 ```
+
 
 ## Contributing
 
