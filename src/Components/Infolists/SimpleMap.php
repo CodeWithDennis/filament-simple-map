@@ -22,7 +22,7 @@ use CodeWithDennis\SimpleMap\Components\Concerns\HasRegion;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasUnits;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasWaypoints;
 use CodeWithDennis\SimpleMap\Components\Concerns\HasZoom;
-use Filament\Infolists\Components\Actions\Action;
+use Filament\Actions\Action;
 
 class SimpleMap extends Action
 {
