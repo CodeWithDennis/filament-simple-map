@@ -29,9 +29,4 @@ class SimpleMapServiceProvider extends PackageServiceProvider
             Css::make('filament-simple-map-styles', __DIR__ . '/../resources/dist/filament-simple-map.css'),
         ], 'codewithdennis/filament-simple-map');
     }
-
-    protected function getAssetPackageName(): ?string
-    {
-        return 'codewithdennis/filament-simple-map';
-    }
 }
